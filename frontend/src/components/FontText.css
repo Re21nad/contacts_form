@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    background-color: var(--green_200);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green_200: hsl(148, 38%, 91%);
+    --green_600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --gray_500: hsl(186, 15%, 59%);
+    --gray_900: hsl(187, 24%, 22%);
+    --size_font: 16px;
+    --font_family: 'Karla', sans-serif;
+    --width: 400px;
+    --height: 700px;
+}
+
+h1{
+    font-family: var(--font_family);
+    color: var(--gray_900);
+}
+.container_1 {
+    width: 800px;
+    padding: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 80vh;
+}
+
+
+.name, .type .Ratio {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+}
+
+.name .first, .name .last, .Email , .message{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.name label, .Email label, .type label, .message label, .check label {
+    font-family: var(--font_family);
+    font-size: var(--size_font);
+    color: var(--gray_500);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.name input, .Email input, .type .General, .type .Support {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 8px;
+    border: 1px solid var(--gray_500);
+    border-radius: 4px;
+    font-size: var(--size_font);
+    box-sizing: border-box;
+    color: black;
+    transition: 0.3s;
+}
+
+.type .General .ratio-input:checked, .type .Support .ratio-input:checked{
+    color: var(--green_600);
+}
+.name input:hover, .Email input:hover, .message .message-input:hover{
+    border: 1px solid var(--green_600);
+    border-radius: 4px;
+}
+
+.type .General:hover, .type .Support:hover{
+    background-color: var(--green_200);
+    border: 1px solid var(--green_600);
+    border-radius: 4px;
+}
+
+.message .message-input {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    border: 1px solid var(--gray_500);
+    border-radius: 4px;
+    font-size: var(--size_font);
+    box-sizing: border-box;
+    color: black;
+    transition: 0.3s;
+    line-height: normal;
+    resize: vertical;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.submit{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;border: none;
+    background-color: var(--green_600);
+    color: var(--white);
+    font-size: var(--size_font);
+    font-family: var(--font_family);
+    font-weight: 700;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.submit:hover{
+    background-color: var(--green_200);
+    color: black;
+}
